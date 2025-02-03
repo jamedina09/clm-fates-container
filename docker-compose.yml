@@ -1,0 +1,15 @@
+services:
+  my_service:
+    image: personal-clm-fates-image # Use your existing image name here
+    container_name: personal-clm-fates # Specify your custom container name
+    hostname: docker
+    user: clm-user # Run the container as the non-root user
+    volumes:
+      - type: bind
+        source: ${PROJECT_DIRECTORY}
+        target: /projects_mirror
+    stdin_open: true
+    tty: true
+
+volumes:
+  projects:
