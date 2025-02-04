@@ -1,4 +1,3 @@
-# https://bb.cgd.ucar.edu/cesm/threads/port-machine-to-ubuntu-error.7934/
 #!/bin/bash
 
 # ------------------------------------------------------------------
